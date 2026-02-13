@@ -37,7 +37,7 @@ app.get("/api/v1", (req, res) => {
   res.json({ 
     status: "online", 
     version: "1.0.0",
-    message: "ProjectForge API is running"
+    message: "ProjectForge API is running \n View Docs : https://projectforgeapi.onrender.com/api/v1/docs"
   });
 });
 
