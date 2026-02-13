@@ -42,7 +42,7 @@ app.get("/api/v1", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("ProjectForge API is running");
+  res.send("ProjectForge API is running ");
 });
 
 
@@ -71,5 +71,5 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
-  console.log(`API Documentation: http://localhost:${port}/api/v1/docs`);
+  console.log(`API Documentation: https://projectforgeapi.onrender.com/api/v1/docs`);
 });
