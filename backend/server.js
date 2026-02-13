@@ -41,6 +41,11 @@ app.get("/api/v1", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("ProjectForge API is running");
+});
+
+
 // Swagger Documentation
 app.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
   customCss: '.swagger-ui .topbar { display: none }',
